@@ -20,10 +20,14 @@ class FlutterActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         //这个填充的view可以作为flutter真正的view被填充和加载前展示出来 也就是我们启动时候看到的那个瞬间黑屏
         setContentView(R.layout.activity_flutter)
-        val flutterView=Flutter.createView(this@FlutterActivity,lifecycle,"route")
-        val layout=FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT,
-            FrameLayout.LayoutParams.MATCH_PARENT)
-        addContentView(flutterView,layout)
+//        val flutterView=Flutter.createView(this@FlutterActivity,lifecycle,"route")
+//        val layout=FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT,
+//            FrameLayout.LayoutParams.MATCH_PARENT)
+//        addContentView(flutterView,layout)
+
+        val fragmentTransaction = supportFragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.fl_flutter_view, Flutter.createFragment("route"))
+        fragmentTransaction.commit()
     }
 
 }
