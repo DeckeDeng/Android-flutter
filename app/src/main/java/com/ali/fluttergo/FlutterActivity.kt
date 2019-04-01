@@ -2,20 +2,19 @@ package com.ali.fluttergo
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.widget.FrameLayout
 import io.flutter.facade.Flutter
 
 
 /**
  * Author: xiaojia.dxj
- * Date: 2019/3/21 15:42
+ * Date: 2019/4/1 15:07
  * Email: xiaojia.dxj@alibaba-inc.com
- * LastUpdateTime: 2019/3/21 15:42
+ * LastUpdateTime: 2019/4/1 15:07
  * LastUpdateBy: xiaojia.dxj
  *
  * Describle:
  */
-class FlutterActivity: AppCompatActivity() {
+class FlutterActivity: AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //这个填充的view可以作为flutter真正的view被填充和加载前展示出来 也就是我们启动时候看到的那个瞬间黑屏

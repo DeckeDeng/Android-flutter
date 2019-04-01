@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val flutterView=Flutter.createView(this@MainActivity,lifecycle,"routeAPP")
+        val flutterView= Flutter.createView(this@MainActivity,lifecycle,"routeAPP")
         val layout= FrameLayout.LayoutParams(
             FrameLayout.LayoutParams.MATCH_PARENT,
             FrameLayout.LayoutParams.MATCH_PARENT)
